@@ -15,13 +15,20 @@ return {
     filetypes = { 'ruby' },
     root_dir = util.root_pattern('Gemfile', '.git'),
     init_options = {
+      -- see https://github.com/Shopify/vscode-ruby-lsp/blob/main/package.json for what is available
       enabledFeatures = {
         'codeActions',
         'diagnostics',
         'documentHighlights',
+        'documentLink',
         'documentSymbols',
+        'foldingRanges',
         'formatting',
+        'hover',
         'inlayHint',
+        'onTypeFormatting',
+        'selectionRanges',
+        'semanticHighlighting'
       },
     },
   },
